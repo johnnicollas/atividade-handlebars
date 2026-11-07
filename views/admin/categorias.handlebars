@@ -1,0 +1,14 @@
+{{!-- [ADICIONADO P/ RODAR] listagem de categorias --}}
+<h3>Lista de categorias:</h3>
+<a href="/admin/categorias/add" class="btn btn-success mb-3">Nova categoria</a>
+
+{{#each categorias}}
+    <div class="card mb-2">
+        <div class="card-body">
+            <h4>{{nome}}</h4>
+            <small>Slug: {{slug}}</small>
+        </div>
+    </div>
+{{else}}
+    <h4>Nenhuma categoria registrada</h4>
+{{/each}}
